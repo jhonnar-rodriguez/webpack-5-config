@@ -1,3 +1,5 @@
+import './styles/index.scss';
+
 const receipt = {
   ironIngot: 1,
   leatherStrips: 2,
@@ -10,5 +12,5 @@ const gauntletReceipt = {
   refinedMoonstone: 4,
 }
 
-console.log(receipt);
-console.log(gauntletReceipt);
+console.log('receipt', receipt);
+console.log('gauntletReceipt', gauntletReceipt);
