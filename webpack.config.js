@@ -14,7 +14,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/, // Everything that ends with .js
+        test: /\.jsx?$/, // Everything that ends with .js
         exclude: /node_modules/, // We do not want to run the transpilation in stuff we won't need
         use: {
           loader: 'babel-loader',
@@ -34,6 +34,9 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   devtool: "source-map",
   devServer: {
     hot: true,
