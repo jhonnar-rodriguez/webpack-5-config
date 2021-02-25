@@ -10,7 +10,7 @@ const App = () => {
       <section className='hero'></section>
       <main>
         <section>
-          <h1>Hi From App Updated!</h1>
+          <h1>Hi From App!</h1>
         </section>
       </main>
 
